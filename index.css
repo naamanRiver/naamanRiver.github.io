@@ -121,6 +121,32 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 .menu-btn.open .menu-btn__burger::before{transform: rotate(45deg) translate(35px,-35px);}
 .menu-btn.open .menu-btn__burger::after{transform: rotate(-45deg) translate(35px,35px);}
 
+/* rotate */
+.rotate {
+    transition: transform 1s ease-in-out;
+}
+
+.rotate.rotate-animation {
+    animation: rotateImage 2s linear 1;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* Media *  */
 
