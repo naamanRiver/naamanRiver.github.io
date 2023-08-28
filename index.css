@@ -1,6 +1,6 @@
 :root {
     --whiteBG: #fff;
-    --grayBG1: #f9f9f9;
+    --grayBG1: #F8F8F8; /* f9f9f9    */
     --textColor: black; 
     --navLinks: #898989;;
     --textColorMain :#444;
@@ -61,7 +61,8 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .exampels:hover{background:#a400a4; color:#fff;box-shadow: 0 0 10px #a400a4; }
 /*section 2 */
 .skill{background:var(--whiteBG);}
-.skill>div>h3{color:var(--textColor);}
+.skill>div>h2{color:var(--textColor);}
+.head-2{font-size:18px; padding:15px;}
 .skill>div{text-align: center; padding-top:50px;}
 .skill>div>p{text-align: center; padding:20px 20px; color:var(--navLinks);}
 .skill>div>h1{color:var(--navLinks);; font-size:30px;}
@@ -69,7 +70,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .describe>div{background:var(--grayBG1); padding:20px; box-shadow: 0px 3px 15px var(--shadow);}
 .skill>div{margin-top:0px; margin-bottom:50px;}
 .head{background: -webkit-linear-gradient(20deg,#2777ff,#a400a4);background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;} 
-.describe>div>p{text-justify: distribute; color:var(--navLinks); text-align: justify; line-height:1.5; font-size:15px;  hyphens: auto; padding: 20px 20px;}
+.describe>div>p{line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
 .describe>div>h3{color:var(--textColor);  text-align: center;}
 .min-icon{color:#367BF0; text-align: center;}
 .min-con{display:flex; align-items: center; justify-content: center; margin-bottom:15px; font-size:25px;}
@@ -77,9 +78,9 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .FAQ{min-height: 100vh; background: var(--grayBG1);}
 .FAQ>article{display: flex; justify-content: center; align-items: center; flex-direction: column; padding-bottom:200px;}
 .header2{text-align:center; font-size:30px; padding-top:100px; }
-.faqText{ padding: 20px; color:var(--textColor); font-weight: bold; text-align: center; font-size:19px; padding-top:50px;}
+.faqText{ padding: 20px; color:var(--textColor); font-weight: bold; text-align: center; font-size:18px; padding-top:50px;}
 .questions{margin-top:100px; width:700px; color:var(--textColor);}
-.question{ text-align: left; cursor:pointer; font-size:15px;   padding: 35px 20px; height:50px; display: flex; align-items: center; justify-content: space-between;}
+.question{ text-align: left; cursor:pointer; font-size:15px; font-weight:bold;  padding: 35px 20px; height:50px; display: flex; align-items: center; justify-content: space-between;}
 .answer{ font-size:14px; opacity: 0; visibility: hidden; background:var(--whiteBG); color:var(--textColor);  height:0px; overflow:hidden; transition: 0.5s ease-in-out;}
 .answer>p{padding:20px; text-align: justify; text-justify: distribute;}
 .question-box{border-radius: 10px; background: var(--question); margin-bottom:10px; box-shadow: 2px 3px 5px var(--shadow);}
@@ -141,20 +142,21 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 @media only screen and (max-width: 800px){
     .questions{width:90%; margin-top:50px;}
     .question{font-size:15px;}
-    .answer>p{font-size:13px;}
+    .answer>p{font-size:15px;}
     .faqText{width:70%; font-size:15px;text-align: justify; margin:auto; padding-top:10px;}
     .head{font-size:18px; padding: 20px;}
     .describe{grid-template-columns: 90%;}
     .skill>div>h3{font-size:15px; padding:0px 20px;; text-align: center;}
     .faqText{font-size:15px; text-align:left; width:100%;}
+    .head-2{font-size:15px;}
 
 }
 
 @media only screen and (max-width: 600px){
     .questions{width:90%; margin-top:50px;}
     .question{font-size:15px;}
-    .answer>p{font-size:13px;}
-    .open>.answer{opacity:1; visibility: visible;  height:170px;;}
+    .answer>p{font-size:15px;}
+    .open>.answer{opacity:1; visibility: visible;  height:260px;;}
     .head{font-size:18px; padding: 20px;}
     .head1{font-size:15px;}
     .head2{font-size: 20px;}
