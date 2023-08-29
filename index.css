@@ -28,7 +28,7 @@ nav{background: var(--whiteBG); height:40px;}
 nav>ul{display: flex; justify-content: center; align-items: center; color:#070f6c;}
 nav>ul>li{list-style: none; transition:0.3s;}
 nav>ul>li>a:hover{ color:#2777ff; border-bottom: 1px solid #2777ff;}
-nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-shadow: 0px 0px 1px #000; font-weight: bold;transition:0.5s; padding:5px 20px;line-height:40px;}
+nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text-shadow: 0px 0px 1px #000; font-weight: bold;transition:0.5s; padding:5px 20px;line-height:40px;}
 /* Night/Light toggle   */
 *{ box-sizing: border-box; padding: 0; margin: 0; }
 .container { width: 100%; min-height: 100vh; padding: 10px; background-color: #EEE; color: #333; transition: all 0.4s ease-out; }
