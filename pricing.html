@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/bdb1c3c482.js" crossorigin="anonymous"></script>
     <title>your static pages</title>
 </head>
 <body>
@@ -12,22 +11,41 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">LINK1</a></li>
             </ul>
 
             <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
                 <input type="checkbox" id="toggle">
                 <div class="night">
-                    <p class="toggleText">Light mode</p>
+                    <!--<p class="toggleText">Light mode</p>-->
                 </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
             </div>
         </nav>
 
     </header>
 
+    <div class="phone-c">
+        <div class="phone">
+            <a href="#">ABOUT</a>
+            <a href="#">ARTICLES</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">PRICING</a>
+            <a href="#">link1</a>
+        </div>
+    </div>
+    
+
     <section class="paper">
+
 
         <article class="A1">
 
@@ -70,6 +88,23 @@
             
             
         });
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+
+        
+
+
+    </script>
+
+</body>
+</html>
 
 
         
