@@ -45,6 +45,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .phone:nth-child(1){padding-top:10px;}
 .phone>a{margin-bottom:30px; color: var(--textColor); text-decoration: none;  font-size:15px; line-height: 3em;}
 .show{visibility: visible; overflow: visible; height:370px; opacity:1;}
+.phone-c{background:var(--grayBG2);}
 /* SECTION 1*/
 .main{transition: 1s; height:100vh; background:var(--grayBG1); display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .main-container{max-width:900px; margin:auto;}
