@@ -46,6 +46,8 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .phone>a{margin-bottom:30px; color: var(--textColor); text-decoration: none;  font-size:15px; line-height: 3em;}
 .show{visibility: visible; overflow: visible; height:370px; opacity:1;}
 .phone-c{background:var(--grayBG2);}
+.location{background: #2777ff; color:#fff; padding:6px 10px;}
+.location:hover{color: var(--textColor);}
 /* SECTION 1*/
 .main{transition: 1s; height:100vh; background:var(--grayBG1); display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .main-container{max-width:900px; margin:auto;}
@@ -89,7 +91,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--navLinks); text-
 .down{color:#2777ff;}
 /* price   */
 .paper{min-height: 95vh; padding-bottom:100px; background: var(--grayBG2); display: flex; justify-content: center; }
-.A1{padding: 48px; background: var(--whiteBG);  margin-top:100px; width:70%; color: var(--textColor); box-shadow: 0 14px 25px rgba(0,0,0,.1)}
+.A1{padding: 48px; background: var(--whiteBG);  margin-top:100px; width:60%; color: var(--textColor); box-shadow: 0 14px 25px rgba(0,0,0,.1)}
 .A1>h1{margin-bottom:35px; border-bottom:2px solid  rgba(127,127,127,.2); font-size:32px; padding-bottom:12px;}
 .A1>p{font-size:15px; margin-bottom: 20px; line-height: 1.5;}
 .A1>ul{padding-left:20px;}
@@ -122,7 +124,10 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 .menu-btn.open .menu-btn__burger::before{transform: rotate(45deg) translate(35px,-35px);}
 .menu-btn.open .menu-btn__burger::after{transform: rotate(-45deg) translate(35px,35px);}
 
-/* rotate */
+/* rotate  */
+
+
+
 .rotate {
     transition: transform 1s ease-in-out;
 }
@@ -149,6 +154,11 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
     }
 }
 
+
+
+
+
+
 /* Media *  */
 
 @media screen and (min-width: 1200px) {
@@ -159,11 +169,14 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 
 @media screen and (min-width: 1100.45px) {
     .menu-btn__burger{display:none;}
+    
 }
 
 @media screen and (max-width: 1100.55px) {
     .describe{grid-template-columns: 300px 300px;}
     nav>ul{display: none;}
+    .A1{width:80%;}
+    
 }
 
 @media only screen and (max-width: 800px){
@@ -176,6 +189,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
     .skill>div>h3{font-size:15px; padding:0px 20px;; text-align: center;}
     .faqText{font-size:15px; text-align:left; width:100%;}
     .head-2{font-size:15px;}
+    .A1{width:95%;}
 
 }
 
