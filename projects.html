@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/bdb1c3c482.js" crossorigin="anonymous"></script>
+    <title>your static pages</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a class="location" href="#">PRICING</a></li>
+                <li><a href="#">LINK1</a></li>
+            </ul>
+
+            <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <!--<p class="toggleText">Light mode</p>-->
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="phone-c">
+        <div class="phone">
+            <a href="#">ABOUT</a>
+            <a href="#">ARTICLES</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">PRICING</a>
+            <a href="#">link1</a>
+        </div>
+    </div>
+    
+    <section class="projects">
+
+        <article class="projects-container">
+
+            <div class="project-card">
+
+                <div class="img-card"><img src="project1.jpg" alt="server"></div>
+                <div class="details">
+                    <div><p>Number of sections:</p></div>
+                    <div><p><span class="detail-info">4</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Cost/Hours:</p></div>
+                    <div><p><span class="detail-info">30$/3 Hours</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Page score/speed:</p></div>
+                    <div><p><span class="detail-info">90</span></p></div>
+                </div>
+
+                <div class="buttons">
+                    <div><a href="#">More dettails</a></div>
+                    <div><a href="#">View page</a></div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="img-card"><img src="project2.jpg" alt="server"></div>
+                <div class="details">
+                    <div><p>Number of sections:</p></div>
+                    <div><p><span class="detail-info">4</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Cost/Hours:</p></div>
+                    <div><p><span class="detail-info">30$/3 Hours</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Page score/speed:</p></div>
+                    <div><p><span class="detail-info">90</span></p></div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="img-card"><img src="project3.jpg" alt="server"></div>
+                <div class="details">
+                    <div><p>Number of sections:</p></div>
+                    <div><p><span class="detail-info">4</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Cost/Hours:</p></div>
+                    <div><p><span class="detail-info">30$/3 Hours</span></p></div>
+                </div>
+                <div class="details">
+                    <div><p>Page score/speed:</p></div>
+                    <div><p><span class="detail-info">90</span></p></div>
+                </div>
+
+            </div>
+
+
+        </article>
+
+    </section>
+
+
+
+
+
+
+
+    <script>
+        
+
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+            
+            
+        });
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+
+        
+
+
+    </script>
+
+</body>
+</html>
