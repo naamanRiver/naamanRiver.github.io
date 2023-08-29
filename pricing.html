@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/bdb1c3c482.js" crossorigin="anonymous"></script>
+    <title>your static pages</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+
+            <div>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <p class="toggleText">Light mode</p>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="paper">
+
+        <article class="A1">
+
+            <h1>Static Web Design Services at $10 per Hour</h1>
+
+            <p>As a new service of static web page design, I will charge 10$ an hour this is a very cheap market price, but it wouldn’t come at the cost of the quality of the page. The reason behind this is to establish a customer circle and test my knowledge. After that, the prices will rise no doubt.</p>
+            <p>I will make an assumption of how many hours will be needed for the project to be done. once the price is set any additional time I spent will not affect the price of the deal. The main things into consideration will be: </p>
+            <ul>
+                <li> Choosing the right page for your business, you can show me a web page that you want for your business. If you don’t have one on your mind you can search online for website templates based on niche such as those presented on Colorlib. some web designs are hard for beginners so this is an important thing to make sure I can create the design you want. You can get an assumption of my skills at the projects page.</li>
+                <li> on average 4 sections on one static page will need around 3 hours to be written this includes the basic need of a modern website such as responsive design for phones and tablets, best coding practices for a maximum speed of the page. And Browser Compatibility.</li>
+            </ul>
+
+            <h2>Additional things to add are:</h2>
+            <ul>
+                <li>Working contact form</li>
+                <li>Database related requests.</li>
+                <li>General server side functionality</li>
+            </ul>
+        </article>
+
+    </section>
+    
+
+
+
+    <script>
+        
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+            
+            
+        });
+
+
+        
+
+
+    </script>
+
+</body>
+</html>
