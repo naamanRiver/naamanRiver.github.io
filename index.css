@@ -181,8 +181,10 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 }
 
 @media only screen and (max-width: 800px){
-    .questions{width:90%; margin-top:50px;}
     .projects-container{grid-template-columns: 300px;}
+    .A1>h1{font-size: 25px;}
+    .A1{padding:25px;}
+    .questions{width:90%; margin-top:50px;}
     .question{font-size:15px;}
     .answer>p{font-size:15px;}
     .faqText{width:70%; font-size:15px;text-align: justify; margin:auto; padding-top:10px;}
@@ -197,7 +199,10 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 
 @media only screen and (max-width: 600px){
     .questions{width:90%; margin-top:50px;}
+    .A1{padding:21px;}
+    .A1{padding:20px;}
     .describe{grid-template-columns: 100%; grid-gap:5px;}
+    .projects-container{grid-template-columns: 300px;}
     .question{font-size:15px;}
     .answer>p{font-size:15px;}
     .open>.answer{opacity:1; visibility: visible;  height:270px;;}
