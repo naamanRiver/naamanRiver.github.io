@@ -49,7 +49,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .location{background: #2777ff; color:#fff; padding:6px 10px; margin-left:5px; margin-right:5px;}
 .location:hover{color: var(--textColor);}
 /* SECTION 1*/
-.main{transition: 1s; height:100vh; background:var(--grayBG1); display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.main{transition: 1s; min-height:100vh; background:var(--grayBG1); display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .main-container{max-width:900px; margin:auto;}
 .tech>div>img{width:50px; height:50px;}
 .tech>div{padding:10px;}
