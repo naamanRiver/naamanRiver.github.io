@@ -73,7 +73,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .describe>div{background:var(--grayBG1); padding:20px; box-shadow: 0px 3px 15px var(--shadow);}
 .skill>div{margin-top:0px; margin-bottom:50px;}
 .head{background: -webkit-linear-gradient(20deg,#2777ff,#a400a4);background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;} 
-.describe>div>p{word-spacing:-1px; line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
+.describe>div>p{word-break: break-all; line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
 .describe>div>h3{color:var(--textColor);  text-align: center;}
 .min-icon{color:#367BF0; text-align: center;}
 .min-con{display:flex; align-items: center; justify-content: center; margin-bottom:15px; font-size:25px;}
@@ -85,7 +85,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .questions{margin-top:100px; width:700px; color:var(--textColor);}
 .question{ text-align: left; cursor:pointer; font-size:15px; font-weight:bold;  padding: 35px 20px; height:50px; display: flex; align-items: center; justify-content: space-between;}
 .answer{ font-size:14px; opacity: 0; visibility: hidden; background:var(--whiteBG); color:var(--textColor);  height:0px; overflow:hidden; transition: 0.5s ease-in-out;}
-.answer>p{padding:20px; text-align: justify; text-justify: distribute;}
+.answer>p{padding:20px; text-align: justify; word-break: break-all; text-justify: distribute;}
 .question-box{border-radius: 10px; background: var(--question); margin-bottom:10px; box-shadow: 2px 3px 5px var(--shadow);}
 .open>.answer{opacity:1; visibility: visible;  height:150px;;}
 .down{color:#2777ff;}
@@ -197,7 +197,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
     .questions{width:90%; margin-top:50px;}
     .question{font-size:15px;}
     .answer>p{font-size:15px;}
-    .open>.answer{opacity:1; visibility: visible;  height:260px;;}
+    .open>.answer{opacity:1; visibility: visible;  height:270px;;}
     .head{font-size:18px; padding: 20px;}
     .head1{font-size:15px;}
     .head2{font-size: 20px;}
