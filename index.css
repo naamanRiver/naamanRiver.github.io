@@ -73,7 +73,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .describe>div{background:var(--grayBG1); padding:20px; box-shadow: 0px 3px 15px var(--shadow);}
 .skill>div{margin-top:0px; margin-bottom:50px;}
 .head{background: -webkit-linear-gradient(20deg,#2777ff,#a400a4);background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;} 
-.describe>div>p{line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
+.describe>div>p{word-spacing:-1px; line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
 .describe>div>h3{color:var(--textColor);  text-align: center;}
 .min-icon{color:#367BF0; text-align: center;}
 .min-con{display:flex; align-items: center; justify-content: center; margin-bottom:15px; font-size:25px;}
