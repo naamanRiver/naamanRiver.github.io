@@ -195,6 +195,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 
 @media only screen and (max-width: 600px){
     .questions{width:90%; margin-top:50px;}
+    .describe{grid-template-columns: 100%; grid-gap:5px;}
     .question{font-size:15px;}
     .answer>p{font-size:15px;}
     .open>.answer{opacity:1; visibility: visible;  height:270px;;}
