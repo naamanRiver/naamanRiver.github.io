@@ -73,7 +73,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .describe>div{background:var(--grayBG1); padding:20px; box-shadow: 0px 3px 15px var(--shadow);}
 .skill>div{margin-top:0px; margin-bottom:50px;}
 .head{background: -webkit-linear-gradient(20deg,#2777ff,#a400a4);background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;} 
-.describe>div>p{word-break: break-all; line-height:1.8; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
+.describe>div>p{line-height:1.8; word-break: break-all; text-justify: distribute; color:var(--textColor); text-align: justify; font-size:15px;  hyphens: auto; padding: 20px 20px;}
 .describe>div>h3{color:var(--textColor);  text-align: center;}
 .min-icon{color:#367BF0; text-align: center;}
 .min-con{display:flex; align-items: center; justify-content: center; margin-bottom:15px; font-size:25px;}
@@ -98,7 +98,7 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .A1>ul>li{ font-size:15px; margin-bottom: 20px; line-height: 1.5;}
 .A1>h2{margin: 30px 0px;}
 /* projects  */
-.projects{background: var(--grayBG2); min-height:95vh; padding-bottom:100px; display:flex; justify-content: center;}
+.projects{background: var(--grayBG2); min-height:95vh; padding-bottom:100px; display:flex; flex-direction: column; align-items: center; padding-top:100px;}
 .project-card{ height: 450px; background: var(--whiteBG);box-shadow: 2px 3px 5px var(--shadow);}
 .projects-container{padding-top:100px; display:grid; grid-template-columns: 300px 300px 300px; grid-gap:10px;}
 .img-card{width:300px; height:200px; display: flex; justify-content: center; padding-top:15px;}
@@ -123,94 +123,4 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 .menu-btn.open .menu-btn__burger{transform: translate(-50px);background: transparent;} 
 .menu-btn.open .menu-btn__burger::before{transform: rotate(45deg) translate(35px,-35px);}
 .menu-btn.open .menu-btn__burger::after{transform: rotate(-45deg) translate(35px,35px);}
-
-/* rotate  */
-
-
-
-.rotate {
-    transition: transform 1s ease-in-out;
-}
-
-.rotate.rotate-animation {
-    animation: rotateImage 2s linear 1;
-}
-
-@keyframes rotateImage {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
-
-
-/* Media *  */
-
-@media screen and (min-width: 1200px) {
-    .head1{font-size:25px;}
-    .head2{font-size: 45px;}
-    .menu-btn__burger{display:none;}
-}
-
-@media screen and (min-width: 1100.45px) {
-    .menu-btn__burger{display:none;}
-    
-}
-
-@media screen and (max-width: 1100.55px) {
-    .describe{grid-template-columns: 300px 300px;}
-    .projects-container{grid-template-columns: 300px 300px;}
-    nav>ul{display: none;}
-    .A1{width:80%;}
-    
-}
-
-@media only screen and (max-width: 800px){
-    .projects-container{grid-template-columns: 300px;}
-    .A1>h1{font-size: 25px;}
-    .A1{padding:25px;}
-    .questions{width:90%; margin-top:50px;}
-    .question{font-size:15px;}
-    .answer>p{font-size:15px;}
-    .faqText{width:70%; font-size:15px;text-align: justify; margin:auto; padding-top:10px;}
-    .head{font-size:18px; padding: 20px;}
-    .describe{grid-template-columns: 90%;}
-    .skill>div>h3{font-size:15px; padding:0px 20px;; text-align: center;}
-    .faqText{font-size:15px; text-align:left; width:100%;}
-    .head-2{font-size:15px;}
-    .A1{width:95%;}
-
-}
-
-@media only screen and (max-width: 600px){
-    .questions{width:90%; margin-top:50px;}
-    .A1{padding:21px;}
-    .A1{padding:20px;}
-    .describe{grid-template-columns: 100%; grid-gap:5px;}
-    .projects-container{grid-template-columns: 300px;}
-    .question{font-size:15px;}
-    .answer>p{font-size:15px;}
-    .open>.answer{opacity:1; visibility: visible;  height:270px;;}
-    .head{font-size:18px; padding: 20px;}
-    .head1{font-size:15px;}
-    .head2{font-size: 20px;}
-    .read{padding: 15px 20px; font-size: 15px;}
-    .exampels{padding: 15px 20px; font-size: 15px;}
-    .tech>div>img{width:40px; height:40px;}
-}
 
