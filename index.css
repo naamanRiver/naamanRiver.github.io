@@ -213,21 +213,3 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 
 /* research   */
 
-@media only screen and (max-height: 750px) {
-    .content{grid-template-columns: 1fr;}
-    .main{height:850px; background: linear-gradient(45deg, #f3f7f9 72%, rgba(32,80,158,1) 70%, rgba(22,208,197,1) 100%);}
-}
-
-@media only screen and (max-height: 450px) {
-    .content{grid-template-columns: 1fr;}
-    .main{height:850px; background: linear-gradient(45deg, #f3f7f9 80%, rgba(32,80,158,1) 70%, rgba(22,208,197,1) 100%);}
-}
-
-@media only screen and (min-height: 1150px) {
-    .content{grid-template-columns: 1fr;}
-    .main{height:1000px; background: linear-gradient(45deg, #f3f7f9 73%, rgba(32,80,158,1) 70%, rgba(22,208,197,1) 100%);}
-}
-
-@media only screen and (max-width: 400px) {
-    .main{ background: linear-gradient(45deg, #f3f7f9 80%, rgba(32,80,158,1) 70%, rgba(22,208,197,1) 100%);}
-}
