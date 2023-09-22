@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bdb1c3c482.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{padding:0; margin:0; box-sizing: border-box;}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        body{font-family: 'Poppins', sans-serif;}
+        .container{
+        display: flex;
+        padding-top:100px;
+        justify-content: center;
+        background: url("server.jpg")    no-repeat , linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5));
+        background-blend-mode: overlay;
+        height: 100vh;
+        background-size: 100% 100%;}
+
+        .text-container{width:60%; color:#fff;}
+        .txt1{font-size:35px; margin-bottom:30px;}
+        .txt1>h1{text-align: center; color:rgb(214, 184, 15);}
+        .txt2{font-size:30px; margin-bottom: 20px;text-align: center;}
+        .txt3{line-height: 30px;; text-align: center;}
+        .timer{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap:10px; margin-top:30px;}
+        .box{background:#fff; padding:20px 15px; color:black; text-align: center;}
+        .input-container{display: flex; justify-content: center;}
+        .subscribe{display:flex; margin-top: 20px;}
+        .input-field{height:40px; width:330px; border: 2px solid #fff; background: transparent;  color:#fff; padding-left: 5px; font-size:15px;}
+        .input-field:focus{outline: none;}
+        .btn{height:40px; padding: 0 20px; background:#fff; color:#444; border: none; font-weight: bold; cursor:pointer;}
+        .icons{margin-top:50px; font-size: 35px;}
+        .icons>a{color:#fff;}
+        img{height:35px; width:35px; margin-right:20px;}
+
+
+        @media only screen and (max-width: 1200px) {
+            .timer{ grid-template-columns: 100px 100px 100px 100px; justify-content: center;}
+            .box{background:#fff; padding:20px 15px; color:black; text-align: center;}
+            h1{font-size:28px;}
+            .txt2{font-size:22px; margin-bottom:10px;}
+            .txt3{font-size:16px;}
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .timer{ grid-template-columns: 80px 80px 80px 80px; justify-content: center;}
+            .input-field{width:250px;}
+            h1{font-size:25px;}
+            .txt2{font-size:20px;}
+            .txt3{font-size:12px;}
+            .text-container{width:90%;}
+            .box>h2{font-size:18px;}
+            .box>p{font-size:13px;}
+        }
+
+        @media only screen and (max-height: 600px) {
+            .container{height:600px; padding-top:15px;}
+            .txt2{font-size:22px; margin-bottom:10px;}
+            .txt1{margin-bottom:15px;}
+            .txt2{font-size:16px;}
+            .txt3{line-height: 10px;; font-size:12px;}
+            .timer{margin-top:20px;}
+        }
+
+
+    </style>
+    <title>Coming soon!</title>
+</head>
+<body>
+
+    
+    <section class="container">
+        <div class="text-container">
+            <div class="txt1">
+                <h1>
+                    COMPANY 
+                </h1>
+            </div>
+
+            <div class="txt2">
+                <p>Something Awesome Is In The Work!</p>
+            </div>
+
+            <div class="txt3">
+                <p class="txt3-p">
+                    We will be up and running soon with our new website.
+                </p>
+            </div>
+
+            <div class="timer">
+                <div class="box">
+                    <h2>0</h2>
+                    <p>Days</p>
+                </div>
+
+                <div class="box">
+                    <h2>0</h2>
+                    <p>Hours</p>
+                </div>
+
+                <div class="box">
+                    <h2>0</h2>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="box">
+                    <h2>0</h2>
+                    <p>Seconds</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="subscribe">
+                    <input  placeholder="Enter your email..." class="input-field" type="text"> <input class="btn" type="submit" value="notify me">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="icons">
+                    <a href="#"><img src="facebook.svg" alt="facebook logo"></a> 
+                    <a href="#"><img src="twitter.svg" alt="twitter logo"></a> 
+                    <a href="#"><img src="linkedin.svg" alt="linked in logo"></a> 
+                    <a href="#"><img src="youtube.svg" alt="youtube logo"></a> 
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ];
+
+        const weekdays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+        ];
+
+         const deadline = document.querySelector(".timer"); // selecting the container
+         const items = document.querySelectorAll(".box h2"); // selcting all H2 under box class
+
+         // the date the product is ready
+         let futureDate = new Date(2024,4,24,24,00,0); // year month(0 based 4=May) 24 hour format, hour,minutes, seconds )
+         
+         const year = futureDate.getFullYear(); // getting the year from the date we set on Date()
+         const hours =futureDate.getHours(); // same
+         const minutes = futureDate.getMinutes(); // same
+
+         const futureTime = futureDate.getTime();
+          console.log(futureTime);
+
+          function getRemainingTime(){
+            const today = new Date().getTime(); // getTime = getting today's date in ms
+            const t = futureTime - today; // future time in ms - today time in ms
+            console.log(t); // t = differance in ms between future date and today
+            // 1s = 1000ms 1m = 60s 1hr = 60min 1d = 24hr
+
+            const oneDay = 24*60*60*1000; // 24 hours * 60 minutes * 60 seconds * 1000ms = ms in whole day
+            const oneHour = 60*60*1000; // =  ms in one hour
+            const oneMinute = 60*1000; // = ms in one minute
+
+            let days = t/oneDay; // differance between dates in ms divided by ms in whole day = remaining days to future date
+            console.log(days);
+            days = Math.floor(days); // making the day counter an integer.
+
+            
+            let hours = Math.floor((t % oneDay) / oneHour); // gives the remaining hours for the hour you set in the future date 
+            console.log(hours); // if the current is 8:30 and the future is 8:00 = 0 hours and 30 minutes!
+
+            // t = 31431906844 oneDay = 86400000 oneHour = 3600000
+            // (31431906844 % 86400000) / 3600000 = remaining hours
+
+            //let test = (t % oneDay) / oneHour;
+            //console.log(test)
+
+            let minutes = Math.floor((t % oneHour) / oneMinute);
+
+            let seconds = Math.floor((t % oneMinute) / 1000);
+
+            const values = [days,hours,minutes,seconds];
+            console.log(values);
+
+            function format(item){ // adding 0 if we 9 minutes seconds hours
+                if(item === 0){ // removing 00 from the counter
+                    return item;
+                }
+                if(item < 10){
+                    return item = `0${item}`; // adding 0 to one digit on the counter
+                }
+
+                return item;
+            }
+
+            items.forEach(function (item , index){
+                item.innerHTML = format(values[index]);
+            });
+
+
+            
+
+            
+        }
+
+        //countdown
+
+        let countdown = setInterval(getRemainingTime , 1000); // dounter active every 1000ms/1sec
+
+        
+        getRemainingTime()
+            
+
+
+    </script>
+</body>
+</html>
