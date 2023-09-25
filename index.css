@@ -55,12 +55,12 @@ nav>ul>li>a{font-size:16px; text-decoration: none; color: var(--textColor); text
 .tech>div{padding:10px;}
 .tech{display:flex; justify-content: center; margin-top:20px;}
 .mini{font-size:13px; text-align: center; font-weight: bold; color:var(--textColorMain); }
-.head1{font-size:20px; text-align: center; color:var(--textColorMain); margin-bottom:20px; text-shadow: 1px 1px 1px var(--textColor);}
-.head2{font-size:30px; font-weight:400; line-height:1.4;  text-align: center;color:var(--textColorMain);  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);}
+.head1{animation: slideRight 1s ease forwards; font-size:20px; text-align: center; color:var(--textColorMain); margin-bottom:20px; text-shadow: 1px 1px 1px var(--textColor);}
+.head2{animation: slideleft 3s ease forwards; font-size:30px; font-weight:400; line-height:1.4;  text-align: center;color:var(--textColorMain);  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);}
 .btns{display: flex; justify-content: center; margin-top:35px;}
-.read{background: linear-gradient(20deg,#2777ff,#a400a4); font-size:15px; color:#fff;; padding: 10px 25px;; text-decoration: none;transition:0.5s ease-in-out; border-radius: 7px;}
+.read{animation: boxes 3s ease forwards;background: linear-gradient(20deg,#2777ff,#a400a4); font-size:15px; color:#fff;; padding: 10px 25px;; text-decoration: none;transition:0.5s ease-in-out; border-radius: 7px;}
 .read:hover{background: #2777ff; color:#fff; box-shadow: 0 0 10px #367BF0; }
-.exampels{margin-left:15px; background: linear-gradient(20deg,#a400a4,#2777ff); font-size:15px;   color:#fff;; padding: 10px 25px;; text-decoration: none; transition:0.5s; border-radius: 7px;}
+.exampels{animation: boxes 5s ease forwards; margin-left:15px; background: linear-gradient(20deg,#a400a4,#2777ff); font-size:15px;   color:#fff;; padding: 10px 25px;; text-decoration: none; transition:0.5s; border-radius: 7px;}
 .exampels:hover{background:#a400a4; color:#fff;box-shadow: 0 0 10px #a400a4; }
 /*section 2 */
 .skill{background:var(--whiteBG);}
@@ -150,6 +150,19 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
         transform: rotate(360deg);
     }
 }
+        /* animation */
+         @keyframes slideRight{
+            0%{transform: translateX(-350px); opacity:0;}
+            100%{transform:translateX(0); opacity:1;}           
+         }
+         @keyframes slideleft{
+            0%{transform: translateX(300px);opacity:0; }   
+            100%{transform:translateX(0);opacity:1;}     
+         }
+         @keyframes boxes{
+            0%{opacity:0; }   
+            100%{opacity:1;}   
+         }
 
 
 
