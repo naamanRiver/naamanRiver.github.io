@@ -108,7 +108,7 @@ nav>ul>li>a{font-size:13px; text-decoration: none; color: var(--textColor); text
 .details>div>p{font-size: 15px;;}
 .buttons{display: flex; justify-content: space-between; align-items: center;}
 .buttons>div{margin:20px;}
-.buttons>div>a{box-shadow: 2px 3px 5px var(--shadow); text-decoration: none; color:#fff; padding: 5px 10px; background:#2777ff; border-radius: 10px;}
+.buttons>div>a{box-shadow: 2px 3px 5px var(--shadow); text-decoration: none; color:#fff; padding: 5px 10px; background:black; border-radius: 10px;}
 /*footer */
 footer{background:black; color:#fff; display: flex; justify-content: center; align-items: center;flex-direction: column;}
 footer>div{padding-top:20px; display: flex; flex-direction: column;}
