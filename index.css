@@ -124,7 +124,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
 .info-head{background:rgba(255, 187, 0, 0.352); padding:10px 5px; display: flex; align-items: center;}
 .info-head>div{width: 20px; border-radius: 50%; border:1px solid var(--textColor); display: flex; justify-content: center; margin-right:7px; font-weight: bold;}
 .info-par{background:rgba(255,210,89,.15); padding: 10px 20px;}
-.info-par>p>a{color:black; font-weight:bold; text-decoration: none; font-size:13px;}
+.info-par>p>a{color:var(--textColor); font-weight:bold; text-decoration: none; font-size:13px;}
 /* Hamburger */
 .menu-btn{position: absolute; top:0px; right: 15px;  width: 40px;height:30px;cursor:pointer;transition: all 0.5s ease-in-out;}
 .menu-btn__burger{position: absolute; top:20px; right:5px;  width:30px;height:3px;background:var(--textColor);border-radius: 5px;transition: all .5s ease-in-out;}
