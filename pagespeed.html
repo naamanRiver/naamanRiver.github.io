@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Static internet web pages creation/design price per hour and general information">
+    <link rel="stylesheet" href="index.css">
+    <title>your static pages</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+
+            <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <!--<p class="toggleText">Light mode</p>-->
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="phone-c">
+        <div class="phone">
+            <a href="about.html">ABOUT</a>
+            <a href="articles.html">ARTICLES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="pricing.html">PRICING</a>
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
+    
+
+    <section class="paper">
+
+
+        <article class="A1">
+
+            <h1>What is pagespeed insights?</h1>
+            <p>Google page speed insights is a popular free tool developed by Google for analyzing the speed and performance of websites on Desktops and mobiles.</p>
+           
+            <h2>How do I use the Google pagespeed insights tool?</h2>
+            <p>1. go to this URL: <a href="https://pagespeed.web.dev/" target="_blank">Pagespeed</a></p>
+            <p>2. paste or write the URL of the desired website that you want to test.</p>
+            <p>3. click analyze and wait 10-60 seconds for the report.</p>
+
+            <h2>Understanding the page speed insights report:</h2>
+            <ul>
+                <li>Performance: Measures loading speed and responsiveness, including metrics like Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS), ensuring a smooth user experience.</li>
+                <li>Accessibility: Evaluates website accessibility for users with disabilities, highlighting issues and suggesting improvements for compliance with accessibility standards.</li>
+                <li>Best Practices: Assesses adherence to web development best practices, identifying areas for optimization, code cleanliness, and security improvements.</li>
+                <li> PageSpeed Insights includes a basic check for essential meta tags that describe the page to search engines. This check helps ensure that fundamental SEO elements, like meta descriptions, are in place. However, it's important to note that Page Speed Insights primarily focuses on technical performance and user experience factors, so its keywords/content SEO assessment is minimal in scope. In-depth SEO analysis typically requires dedicated SEO tools and practices. you can see the SEO guide here: <a href="SEO.html" target ="_blank">SEO</a></li>
+            </ul>
+
+            <h2>What is a good score on page speed insight?</h2>
+            <p>A good score on PageSpeed Insights typically falls in the range of 90-100 for both mobile and desktop. Higher scores indicate faster-loading and more optimized websites.</p>
+            <p>Achieving a perfect 100 score on PageSpeed Insights can be challenging due to various factors like third-party scripts and server limitations. Aiming for 90-100 is a pragmatic goal as it signifies a highly optimized website with excellent performance, usability, and SEO, even if 100 is not always attainable.</p>
+
+            <h2>How Does My Google PageSpeed Insights Score Affect SEO?</h2>
+            <p>Your Google PageSpeed Insights score affects SEO by influencing your website's ranking in search engine results. Faster-loading, well-optimized sites tend to rank higher, improving visibility and attracting more organic traffic.</p>
+            <p>a faster, more optimized website is more likely to keep visitors engaged and on your site for longer. This positive user experience can reduce bounce rates and improve SEO scores, contributing to higher search engine rankings.</p>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div>
+            <p><b>Links</b></p>
+            <a href="#">Prices</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+        </div>
+
+        <div class="copy">
+            <p>static web pages 2023</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script>
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+        });
+
+
+        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+
+        if (isDarkModeEnabled) {
+            htmlElement.setAttribute('data-dark-mode', 'true');
+            text.innerHTML = "Night mode";
+        }
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+    </script>
+</body>
+</html>

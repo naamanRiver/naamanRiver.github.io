@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Static internet web pages creation/design price per hour and general information">
+    <link rel="stylesheet" href="index.css">
+    <title>your static pages</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+
+            <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <!--<p class="toggleText">Light mode</p>-->
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="phone-c">
+        <div class="phone">
+            <a href="about.html">ABOUT</a>
+            <a href="articles.html">ARTICLES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="pricing.html">PRICING</a>
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
+    
+
+    <section class="paper">
+
+
+        <article class="A1">
+
+            <h1>What Is Web Hosting?</h1>
+            <p>Web hosting involves the process of making a website accessible to a global audience. Typically, websites are hosted on servers, which are specialized computers equipped with substantial storage capacity. When a user attempts to access a website, their web browser initiates a request to the specific server where the website is hosted. If the website is publicly accessible, the browser then proceeds to download the necessary files for display.</p>
+
+            <h2>Essential Requirements for Hosting a Website</h2>
+            <p>When it comes to hosting your website, you'll need two essential components: a domain name and a web server.</p>
+
+            <h2>What is a domain name?</h2>
+            <p>A domain name serves as the specific web address that users enter into their browser's address bar to access a particular website. Domain names can have various top-level domains (TLDs), such as .com, .org, .net, and more. It's important to note that you cannot purchase a domain name that is already owned by someone else. However, you have the option to acquire a domain with a different TLD. For instance, if "website.com" is unavailable, you might consider "website.net" if it's unclaimed. Occasionally, domain owners may choose to sell their domains, but this can come at a substantial cost, particularly for domains with established reputations and high levels of web traffic. Some Free domain names are also available, however, using them is generally discouraged. These domains often have a reputation for being associated with spam, which can lead to issues with email providers and social media platforms. <b>Once you bought a domain name and it got registered you cannot change it so make sure you type it right or you would need to buy a new one!</b></p>
+
+            <h2>How do I start?</h2>
+            <p>Commencing your journey into website hosting involves several steps. Begin by carefully selecting a reputable web hosting provider. During this selection, you'll be presented with various hosting plans catering to single or multiple websites. New customers often enjoy cost-effective first-year subscription rates and, in some instances, receive a complimentary .com domain registration. In cases where a free domain is not provided, you will need to purchase one. Domains can be acquired through your hosting provider or a separate domain registrar. For instance, if you purchase hosting from HostGator and a domain from GoDaddy, configuring the domain to work with HostGator from your GoDaddy account will be necessary. However, if you acquire the domain from HostGator, it will automatically integrate with your hosting. Finally, proceed to upload your website files onto the hosting server to make your website live.</p>
+
+            <p><b>Are there any Extra features i can add to my domain?</b></p>
+            <p>You will typically need an <b>SSL certificate</b>, which is often offered for free by most hosting companies. Additionally, you can opt for domain <b>privacy protection</b>, usually costing around $10 to $20, in addition to your domain registration fee. Without privacy protection, anyone can access your personal information, including your name, address, email address, and phone number, by performing a Whois lookup. It's important to note that many services set auto-renewal as the default option, so your domain or hosting will be automatically renewed and charged after the initial year.</p>
+
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div>
+            <p><b>Links</b></p>
+            <a href="#">Prices</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+        </div>
+
+        <div class="copy">
+            <p>static web pages 2023</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script>
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+        });
+
+
+        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+
+        if (isDarkModeEnabled) {
+            htmlElement.setAttribute('data-dark-mode', 'true');
+            text.innerHTML = "Night mode";
+        }
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+    </script>
+</body>
+</html>
