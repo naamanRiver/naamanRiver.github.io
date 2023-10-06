@@ -235,6 +235,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
     .exampels{padding: 15px 20px; font-size: 15px;}
     .articles-container{grid-template-columns: 1fr;}
     .articlesPage{padding:20px;}
+    .articleImg{display: none;}
     /*.tech>div>img{width:75px; height:75px;}*/
 }
 
