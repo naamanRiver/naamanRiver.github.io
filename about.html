@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="about page of my static webpages buisness">
+    <link rel="stylesheet" href="index.css">
+    <title>your static pages</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a  class="location" href="#">ABOUT</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+
+            <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <!--<p class="toggleText">Light mode</p>-->
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="phone-c">
+        <div class="phone">
+            <a href="about.html">ABOUT</a>
+            <a href="articles.html">ARTICLES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="pricing.html">PRICING</a>
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
+    
+
+    <section class="paper">
+
+
+        <article class="A1">
+
+            <h1>About me</h1>
+            <p>I am a self-taught web developer with two years of hands-on experience. I've embarked on a freelance journey, specializing in crafting simple, cost-effective static websites for businesses looking to establish an online presence without hefty investments.</p>
+            <p>In today's fiercely competitive developer landscape, I am dedicated to continuous growth. Currently, I am honing my skills in PHP, WordPress, and fundamental web application security. In the future, I plan to expand my offerings to include both static and dynamic web solutions.</p>
+            <p>For inquiries and project orders, please feel free to reach out to me through my Fiverr profile, where your projects are safeguarded under their customer protection framework.</p>
+            <a href="#">Fiverr account will come soon...</a>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div>
+            <p><b>Links</b></p>
+            <a href="#">Prices</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+        </div>
+
+        <div class="copy">
+            <p>static web pages 2023</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script>
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+        });
+
+
+        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+
+        if (isDarkModeEnabled) {
+            htmlElement.setAttribute('data-dark-mode', 'true');
+            text.innerHTML = "Night mode";
+        }
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+    </script>
+</body>
+</html>
