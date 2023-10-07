@@ -96,29 +96,31 @@
 
     <script>
 
+        const box = document.querySelectorAll(".question-box");
+        const menu = document.querySelector(".phone");
+        
         const toggle = document.getElementById("toggle"); 
         const text = document.querySelector(".toggleText"); 
         const htmlElement = document.querySelector('html');
 
-        toggle.addEventListener("click",function(){
-            document.querySelector('html').toggleAttribute('data-dark-mode');
-            if (htmlElement.hasAttribute('data-dark-mode')) {
-                text.innerHTML = "Night mode";
-            } else {
-                text.innerHTML = "Light mode";
-            }
-        });
-
-
-        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+        const isDarkModeEnabled = localStorage.getItem('darkMode');
 
         if (isDarkModeEnabled) {
             htmlElement.setAttribute('data-dark-mode', 'true');
             text.innerHTML = "Night mode";
         }
-
+        
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            localStorage.setItem('darkMode', 'on');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }           
+        });
+        
         const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector(".phone");
         
         menuBtn.addEventListener('click',function(){
             menuBtn.classList.toggle("open");
