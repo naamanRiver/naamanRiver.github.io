@@ -25,7 +25,7 @@ nav>h2{padding-top:5px;}
 .work-services{display: flex; justify-content: center; flex-direction: row; margin-top:60px; margin-right:15px;}
 .mini-logo{display: flex; justify-content: center; align-items: center; width:100px; height:50px; background: #f9f9ff; color:#444; font-size: 30px; text-align: center; margin:auto; border: 2px solid #eeeeee;}
 .fa-code{padding-top:10px;}
-.work-txt{color:#777777; font-size: 15px;}
+.work-txt{color:black; font-size: 15px;}
 .work-head>h1{font-weight: bolder; font-size: 35px;}
 /* SECTION 2  */
 .section2{background:#edf6ff; min-height:500px;}
