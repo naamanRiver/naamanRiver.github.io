@@ -66,7 +66,7 @@ form>input{outline:none;}
 .txt3-1{line-height:1.6;}
 .btn-container2{display: flex; justify-content: left; margin:20px 0; color:#000000;}
 .btn-container>input{color:#000000;}
-.btn-container2>a{color:#000000; font-size:12px; margin-top:30px; text-decoration: none; background: #fab700; border: 1px solid transparent; color:#fff; font-weight: bold; padding: 12px 25px;}
+.btn-container2>a{color:#000000; font-size:12px; margin-top:30px; text-decoration: none; background: #fab700; border: 1px solid transparent; font-weight: bold; padding: 12px 25px;}
 
 /* section 4 */
 .section4{
