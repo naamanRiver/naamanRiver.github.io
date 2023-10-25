@@ -81,7 +81,7 @@ form>input{outline:none;}
    .circle{ display: flex; justify-content:center; align-items: center; background: transparent; width: 150px; height: 150px; border-radius: 80px; border: 1px solid #fab700;}
    .circle-info{flex-direction: column; display: flex; justify-content:center; align-items: center; background:#fab700; height: 100px; width:100px; border-radius:50px;}
    .s4-txt{ font-weight: bold; color:#fff; font-size:20px; text-align: center; margin:20px 0px;}
-   .s4-head{color:#fff; font-size:25px;}
+   .s4-head{color:#000000; font-size:25px;}
    .container4{display: grid; grid-template-columns: 220px 220px 220px 220px;;}
    .container4>div{display: flex; justify-content: center; align-items: center; flex-direction: column;}
 
