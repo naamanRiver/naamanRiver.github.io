@@ -89,7 +89,7 @@ form>input{outline:none;}
 
    /* section5   */
    .section5{padding:100px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
-   .head5{color:#fab700; text-align:center; font-size:25px; margin-bottom: 100px; }
+   .head5{color:#665200; text-align:center; font-size:25px; margin-bottom: 100px; }
    .container5{display: grid; grid-template-columns: 260px 260px 260px; grid-gap: 15px;}
    .sector{width:260px; height:174px; box-shadow:2px 2px 2px  gray;}
    .sector-head{margin:20px 0px; text-align: center; font-size:17px;}
