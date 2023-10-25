@@ -22,7 +22,7 @@
 }
 *{padding:0; margin:0; box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-body{font-family: 'Poppins', sans-serif;}
+body{font-family: 'Poppins', sans-serif; background:black;}
 /*nav*/
 nav{background: var(--whiteBG); height:40px;}
 nav>ul{display: flex; justify-content: center; align-items: center; color:#070f6c;}
