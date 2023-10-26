@@ -63,7 +63,7 @@ nav>ul>li>a{font-size:13px; text-decoration: none; color: var(--textColor); text
 .exampels{animation: boxes 5s ease forwards; margin-left:15px; background: linear-gradient(20deg,#a400a4,#2777ff); font-size:15px;   color:#fff;; padding: 10px 25px;; text-decoration: none; transition:0.5s; border-radius: 7px;}
 .exampels:hover{background:#a400a4; color:#fff;box-shadow: 0 0 10px #a400a4; }
 /*section 2 */
-.skill{background:var(--whiteBG);}
+.skill{background:var(--whiteBG); padding-bottom: env(safe-area-inset-bottom);}
 .skill>div>h2{color:var(--textColor);}
 .head-2{font-size:18px; padding:15px;}
 .skill>div{text-align: center; padding-top:50px;}
