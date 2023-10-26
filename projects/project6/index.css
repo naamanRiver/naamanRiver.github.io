@@ -26,7 +26,7 @@ nav>ul>li>a:hover{background:#898F9C;}
 .services{background:#F0F0F0; padding-bottom:100px;}
 
 .head-s2{width:60%; margin:auto; padding-top:75px;}
-.head-s2>h2{text-align:center; margin-bottom:30px;color:#898F9C; text-shadow: 5px 5px 5px #D8D8D8;}
+.head-s2>h2{text-align:center; margin-bottom:30px;color:#000000; text-shadow: 5px 5px 5px #D8D8D8;}
 .head-s2>p{line-height: 25px; text-align: justify;}
 .services-box{display: grid; grid-template-columns: 1fr 1fr 1fr; width:80%; margin:auto; margin-top: 50px; grid-gap:15px;}
 .services-box>div{background:#fff; pADDING:20px; box-shadow: 5px 5px 5px #D8D8D8;}
@@ -60,7 +60,7 @@ form>div>textarea{resize:none; width:95%; height:120px; padding:10px; border: #4
 form>div>textarea:focus{outline:none;}
 .send{display: flex; justify-content: center; margin-top:20px;}
 .send>input{background: black; color:#fff; padding: 10px 20px; border:none; border-radius: 10px; cursor: pointer; font-weight: bold; width:50%;}
-.contact-msg{text-align: center; margin-bottom:50px; color:#898F9C;}
+.contact-msg{text-align: center; margin-bottom:50px; color:#000000;}
 
 /*  footer */
 footer{background:black; color:#fff; text-align: center; font-size: 13px; height: 30px; line-height:30px;}
