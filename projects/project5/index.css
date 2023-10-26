@@ -133,6 +133,7 @@ form>input{outline:none;}
     .news{display: flex; justify-content: center;}
     .s6-txt{text-align: center; padding:20px;}
     h6{text-align: center;}
+   .hide{display: flex; justify-content:center;}
  }
  
 
