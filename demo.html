@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="demo page download and article for beginners to practice web hosting with the downloaded files">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+
+            <div>
+                <label class="toggleText" for="toggle">Light Mode</label>
+                <input type="checkbox" id="toggle">
+                <div class="night">
+                    <!--<p class="toggleText">Light mode</p>-->
+                </div>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="phone-c">
+        <div class="phone">
+            <a href="about.html">ABOUT</a>
+            <a href="articles.html">ARTICLES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="pricing.html">PRICING</a>
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
+    
+
+    <section class="paper">
+
+
+        <article class="A1">
+
+
+
+            <h1>Demo page for practicing web hosting</h1>
+            <p>This is a demonstrative webpage that offers you the opportunity to refine and evaluate your web hosting capabilities. Enclosed are three fundamental components: an HTML document, a CSS stylesheet, and a compact image featuring a map.</p>
+            <p>you can view the demo page hrere: <a href="#">Demo page</a></p>
+            <div>
+                <div class="info-head">
+                    <div><p>i</p></div>
+                    <p>Files for the demo page</p>
+                </div>
+                <div class="info-par">
+                    <p><a href="test.html" download>index.html</a></p>
+                    <br>
+                    <p><a href="test.html" download>index.css</a></p>
+                    <br>
+                    <p><a href="test.html" download>map picture</a></p>
+                </div>
+            </div>
+            <br>
+            <h2>Security warnings!</h2>
+            <p>In most cases, HTML, CSS, and image files are considered safe. However, it's essential to exercise caution when dealing with unfamiliar files on your computer or hosting server. It's advisable to scan these files with a reliable antivirus scanner for added security. If you want an extra layer of precaution, you can perform the following steps:</p>
+
+            <ul>
+                <li>Right-click on the HTML and CSS files.</li>
+                <li>Open them in a text editor like notepad in Windows.</li>
+                <li>Copy the entire code from these files.</li>
+                <li>Paste the code into an AI tool like ChatGPT.</li>
+                <li>ChatGPT can help determine whether the code is potentially malicious and provide insights </li>
+            </ul>
+
+            <h2>Orders after downloading the files</h2>
+            <P>You should promptly download these files to your local machine and place them in the corresponding directory/folder. It's prudent to establish a backup of the files, as it serves as a safety net in the event of unintended deletions or crucial modifications. Alternatively, you can retrieve the original files by revisiting this article at any time.</P>
+            <p>For smooth operation, it is essential to have all three files residing within the same folder. Additionally, avoid changing the filenames, as such changes could lead to operational disruptions. With the files situated in the same folder, initiate the HTML file by double-clicking it. This action will unveil your demonstration page on your default browser. It is worth noting that the default email, phone, and address can be dynamically modified using JavaScript variables I will explain how to do it.</p>
+
+            <h2>How to edit contact details with javascript variables</h2>
+            <p>Customizing the contact details is a straightforward process. Open the index.html file with your preferred text editor, such as Notepad. Navigate to the bottom of the file, and within the <b>script</b> tag, you'll encounter three lines. Only the text in green needs to be altered. Ensure that the text is enclosed within double quotation marks ( “ ) and is concluded with a semicolon ( ; ). For instance, if you intend to modify the current email from "Email: email@email.com" to "email@gmail.com," it should appear as follows:</p>
+            <div class="code">
+                <p>email.innerHTML = " <span>Email: email@email.com</span> ";</p>
+                <p>phone.innerHTML = " <span>Phone: 000-0000</span> ";</p>
+                <p>address.innerHTML = " <span>Address: street number city</span> ";</p>
+            </div>
+            <br>
+            <p>For instance, if you intend to modify the current email from "Email: email@email.com" to "email@gmail.com," it should appear as follows:</p>
+            <br>
+            <div class="code">
+                <p>email.innerHTML = " <span> email@gmail.com</span> ";</p>
+            </div>
+            <br>
+            <p>This is a straightforward procedure, but it's essential to modify only the text highlighted in green within the provided code. Altering other portions of the code may lead to unintended issues, potentially causing those lines to disappear from the page. Best of luck with your customization!</p>
+
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div>
+            <p><b>Links</b></p>
+            <a href="#">Prices</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+        </div>
+
+        <div class="copy">
+            <p>static web pages 2023</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script>
+
+        const toggle = document.getElementById("toggle"); 
+        const text = document.querySelector(".toggleText"); 
+        const htmlElement = document.querySelector('html');
+
+        toggle.addEventListener("click",function(){
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+            if (htmlElement.hasAttribute('data-dark-mode')) {
+                text.innerHTML = "Night mode";
+            } else {
+                text.innerHTML = "Light mode";
+            }
+        });
+
+
+        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+
+        if (isDarkModeEnabled) {
+            htmlElement.setAttribute('data-dark-mode', 'true');
+            text.innerHTML = "Night mode";
+        }
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector(".phone");
+        
+        menuBtn.addEventListener('click',function(){
+            menuBtn.classList.toggle("open");
+            menu.classList.toggle("show");
+        });
+
+    </script>
+    
+</body>
+</html>
