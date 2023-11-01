@@ -242,6 +242,7 @@ footer>div>a{color:#fff; text-decoration: none; margin: 15px 0px; font-size:13px
     .articlesPage{padding:20px;}
     .articleImg{display: none;}
     .head-2{margin:auto;}
+    .content>div{padding:20px}
     /*.tech>div>img{width:75px; height:75px;}*/
 }
 
