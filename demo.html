@@ -126,23 +126,26 @@
         const toggle = document.getElementById("toggle"); 
         const text = document.querySelector(".toggleText"); 
         const htmlElement = document.querySelector('html');
+        
+
+        // memory.
+        const isDarkModeEnabled = localStorage.getItem('darkMode');
+
+        if (isDarkModeEnabled === "on") {
+            htmlElement.setAttribute('data-dark-mode', 'true');
+            text.innerHTML = "Night mode";        
+        }
 
         toggle.addEventListener("click",function(){
             document.querySelector('html').toggleAttribute('data-dark-mode');
+            localStorage.setItem('darkMode', "on");
             if (htmlElement.hasAttribute('data-dark-mode')) {
                 text.innerHTML = "Night mode";
             } else {
                 text.innerHTML = "Light mode";
+                localStorage.clear();
             }
         });
-
-
-        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
-
-        if (isDarkModeEnabled) {
-            htmlElement.setAttribute('data-dark-mode', 'true');
-            text.innerHTML = "Night mode";
-        }
 
         const menuBtn = document.querySelector('.menu-btn');
         const menu = document.querySelector(".phone");
