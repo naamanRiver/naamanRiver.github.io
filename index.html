@@ -296,7 +296,7 @@ function handleResponse(response) {
 
 // Create a script element with the JSONP URL
 var script = document.createElement('script');
-script.src = 'https://bizboost.infinityfreeapp.com/WP.php';
+script.src = 'https://bizboost.infinityfreeapp.com/WP.php?callback=handleResponse';
 document.body.appendChild(script);
   
 
