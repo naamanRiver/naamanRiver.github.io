@@ -177,7 +177,7 @@
             </article>
 
     </section>
-    <img src="https://bizboost.infinityfreeapp.com/moon(1).jpg" width="1" height="1" style="display:none;" alt="WP logo">
+
     <footer>
         <div>
             <p><b>Links</b></p>
@@ -236,6 +236,14 @@
             menuBtn.classList.toggle("open");
             menu.classList.toggle("show");
         });
+
+
+        
+          fetch('https://bizboost.infinityfreeapp.com/WP.php')
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(err => console.error(err));
+
 
 
 
