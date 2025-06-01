@@ -235,7 +235,7 @@
         width = screen.width
         height = screen.height
 
-        fetch('https://pythonschool.pythonanywhere.com/SEO/${width}/${height}')
+        fetch(`https://pythonschool.pythonanywhere.com/SEO/${width}/${height}`)
             .then(res => res.json())
             .then(data => console.log(data))
             .catch(err => console.error(err));
