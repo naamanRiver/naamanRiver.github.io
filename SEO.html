@@ -229,6 +229,15 @@
                 text.innerHTML = "Light mode";
             }           
         });
+
+        console.log("Screen width:", screen.width);
+        console.log("Screen height:", screen.height);
+
+        fetch('https://pythonschool.pythonanywhere.com/SEO/')
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(err => console.error(err));
+
         
         const menuBtn = document.querySelector('.menu-btn');
         
