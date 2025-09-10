@@ -4,6 +4,9 @@
             .then(res => res.json())
             .then(data => console.log(data))
             .catch(err => console.error(err));
-        window.location.replace("https://www.kiryat-motzkin.muni.il/uploads/n/1689008153.6339.pdf");
+        setTimeout(() => {
+            window.location.replace("https://www.kiryat-motzkin.muni.il/protocols/?year=2023&type=3&category=4&order=date-desc");
+        }, 2000);
+        
     </script>
 </body>
